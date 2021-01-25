@@ -1,0 +1,137 @@
+* {
+  font-family: "Cute Font", cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+input {
+  all: unset;
+}
+
+i {
+  cursor: pointer;
+  color: rgba(6, 6, 94, 0.795);
+}
+
+button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/trees-4741364_1920.png);
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  height: 8rem;
+  background-color: rgba(6, 6, 94, 0.795);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+header i {
+  color: white;
+}
+
+#filter {
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.todo_input {
+  border-top: 1px solid gray;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.todo_input input {
+  flex: 1;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.time_refresh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time_refresh i:hover {
+  animation: Rotate 1s ease infinite;
+}
+
+@keyframes Rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.date_selectOption {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.item p {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.lineThrough {
+  color: rgba(0, 0, 0, 0.295);
+  text-decoration: line-through;
+}
+
+.hidden {
+  display: none;
+}

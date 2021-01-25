@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do-list</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7325f4a1e0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="clock.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="time_refresh">
+          <div class="currentTime">00:00:00</div>
+          <i class="fas fa-sync-alt" id="refresh" title="초기화"></i>
+        </div>
+        <div class="date_selectOption">
+          <div class="currentDate"></div>
+          <select name="filter" id="filter">
+            <option value="all">All</option>
+            <option value="complete">Complete</option>
+            <option value="uncomplete">Uncomplete</option>
+          </select>
+        </div>
+      </header>
+      <div class="content"></div>
+      <form class="todo_input">
+        <button type="submit">
+          <i class="fas fa-plus-circle" title="추가하기"></i>
+        </button>
+        <input type="text" placeholder="Write a todo" />
+      </form>
+    </div>
+  </body>
+</html>
