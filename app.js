@@ -70,12 +70,11 @@ filter.addEventListener('click', filterTodo);
 
 function filterTodo(event) {
     const list = ul.children;
-    console.log(event.target.value);
     for (let i = 0; i < list.length; i++) {
         const element = list[i];
-        // console.log(element);
         switch (event.target.value) {
             case 'all':
+
                 element.style.display = 'flex';
                 break;
             case 'complete':
@@ -139,8 +138,14 @@ function setCheck_Uncheck(i) {
 
 function TodoDelete(i) {
     LIST[i.id].trash = true;
-    i.parentNode.style.display = 'none';
-}
+    const todo = i.parentNode;
+    todo.classList.add('fall');
+    todo.addEventListener('transitionend', () => {
+        todo.remove();
+    });
+};
+
+
 
 
 

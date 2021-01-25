@@ -135,3 +135,10 @@ header i {
 .hidden {
   display: none;
 }
+
+.fall {
+  transform: translateX(100%);
+  opacity: 0.5;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
