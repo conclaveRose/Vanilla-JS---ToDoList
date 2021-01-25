@@ -123,6 +123,7 @@ function addTodo(todo, id, done, trash) {
     i2.id = id;
     i.setAttribute('job', 'complete');
     i2.setAttribute('job', 'trash');
+    i2.setAttribute('title', '삭제하기');
     ul.appendChild(li);
     li.appendChild(i);
     li.appendChild(p);
